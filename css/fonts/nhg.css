@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'NHaasGroteskDSPro-65Md';
+    src: url('NHaasGroteskDSPro-65Md.woff2') format('woff2'),
+        url('NHaasGroteskDSPro-65Md.woff') format('woff'),
+        url('NHaasGroteskDSPro-65Md.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NHaasGroteskTXPro-55Rg';
+    src: url('NHaasGroteskTXPro-55Rg.woff2') format('woff2'),
+        url('NHaasGroteskTXPro-55Rg.woff') format('woff'),
+        url('NHaasGroteskTXPro-55Rg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
