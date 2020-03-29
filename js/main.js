@@ -88,7 +88,7 @@ function scroll() {
       objectPosition = 0;
     }
 
-    if (scroll > objectPosition + 120) {
+    /*if (scroll > objectPosition + 120) {
       var currentScrollPos = window.pageYOffset;
 
       if (prevScrollpos > currentScrollPos) {
@@ -100,7 +100,7 @@ function scroll() {
       prevScrollpos = currentScrollPos;
     } else {
       nav.style.top = "0px";
-    }
+    }*/
   };
 }
 
