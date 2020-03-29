@@ -590,6 +590,22 @@ body > section{
     font-size: 1.2em;
 }
 
+.aliado-item{
+  margin: 4em 0;
+}
+.aliado-item h2{
+  font-size: 2em;
+  margin:0;
+}
+.aliado-img{
+  margin: auto;
+  text-align: center;
+}
+.aliado-img img{
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+}
 .link-tor{
   margin-top: 2.5em;
   margin-bottom: 2.5em;
@@ -808,7 +824,7 @@ li > a.active:after {
       }
       .nav-main.menu-opened{
         background-color: #fff;
-        height: 400px;
+        height: 420px;
         transition: all 0.3s ease-in, background 0.5s ease-in;
         transition-delay: 0.25s;
         top: 0px !important;
@@ -876,6 +892,14 @@ li > a.active:after {
         font-size: 0.9rem;
       }
 
+}
+@media only screen and (max-width: 767px){
+  .aliado-img{
+    margin: 1em 0;
+  }
+  .aliado-text{
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 576px){

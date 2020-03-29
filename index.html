@@ -58,8 +58,9 @@
       <li><a href="https://centraleaks.org">Inicio</a></li>
       <li><a href="#acerca-de">Acerca de</a></li>
       <li><a href="#seguridad">Seguridad</a></li>
+      <li><a href="#aliados">Aliados</a></li>
       <li><a href="https://centraleaks.org/faq.html">FAQ</a></li>
-      <li class="denuncia"><a class="button" href="https://centraleaks.org/denuncia.html">Denuncia</a></li>
+      <li class="denuncia"><a class="button btn-denuncia" href="#">Verificando navegador...</a></li>
     </ul>
 </nav>
   <header class="header-main">
@@ -69,7 +70,7 @@
           <h1>Lucha contra la corrupción</h1>
           <p>Centraleaks provee de un medio seguro y anónimo para realizar denuncias
             ciudadanas que evidencien actos de corrupción, abusos o infracciones dentro de entidades gubernamentales u otras organizaciones.</p>
-          <a class="button cta display" href="https://centraleaks.org/denuncia.html">Denuncia ahora</a>
+          <a class="button cta display btn-denuncia btn-header" href="#">Verificando navegador...</a>
         </div>
       </div>
     </div>
@@ -116,6 +117,27 @@
   </div>
   </section>
 
+  <section class="aliados" id="aliados">
+    <div class="container">
+        <div class="title-container center">
+        <h1 class="title">Aliados</h1>
+        </div>
+        <div class="aliado-item">
+        <div class="row">
+          <div class="col-md-4 aliado-img">
+            <img src="img/orgs/cum.png" alt="Logo del CUM">
+          </div>
+          <div class="col-md-8 aliado-text">
+            <h2>CUM</h2>
+            <p>
+              El Centro Universitario de Monitoreo de Políticas y Medidas Anticorrupción (CUM) es una alianza estratégica entre la Universidad Francisco Gavidia y la Universidad Dr. José Matías Delgado con el apoyo del Proyecto Pro-Integridad Pública de USAID. El CUM está orientado a suplir la falta de un mecanismo independiente de las entidades públicas para evaluar cómo están avanzando las medidas y políticas anticorrupción.
+            </p>
+          </div>
+      </div>
+      </div>
+    </div>
+    </section>
+
   <section>
   <div class="container center">
     <h2>Ingresa tu código de denuncia a través de Tor para dar seguimiento a tu caso.</h2>
@@ -138,8 +160,75 @@
     <a class="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank" rel="noopener noreferrer"><img src="img/by-sa.svg" alt="Ícono de licencia Creative Commons"></a>
   </footer>
   <!--Scripts-->
-  <script src="js/main.js"></script>
-  <script>"use strict";(function(){for(var a,b=15,c=document.getElementsByTagName("a"),d=0;d<c.length;d++)a=void 0===c[d].attributes.href?null:c[d].attributes.href.nodeValue.toString(),null!==a&&1<a.length&&"#"==a.substr(0,1)&&(c[d].onclick=function(){var a,c=this.attributes.href.nodeValue.toString();if(a=document.getElementById(c.substr(1)))for(var d=500/b,g=f(),h=(e(a)-g)/d,j=1;j<=d;j++)(function(){var a=h*j;setTimeout(function(){window.scrollTo(0,a+g)},b*j)})();var k=document.querySelector(".nav-main");return k.classList.contains("menu-opened")&&(k.classList.remove("menu-opened"),document.body.classList.toggle("no-scroll")),!1});var e=function(a){for(var b=0;a.offsetParent!=null&&null!=a.offsetParent;)b+=a.offsetTop+(null==a.clientTop?0:a.clientTop),a=a.offsetParent;return b-100},f=function(){return document.documentElement.scrollTop+document.body.scrollTop}})();</script>
+  <script src="/js/main.js"></script>
+  <script>
+    "use strict";
+
+(function() // Code in a function to create an isolate scope
+{
+  var speed = 500;
+  var moving_frequency = 15; // Affects performance !
+
+  var links = document.getElementsByTagName("a");
+  var href;
+
+  for (var i = 0; i < links.length; i++) {
+    href =
+      links[i].attributes.href === undefined
+        ? null
+        : links[i].attributes.href.nodeValue.toString();
+
+    if (href !== null && href.length > 1 && href.substr(0, 1) == "#") {
+      links[i].onclick = function() {
+        var element;
+        var href = this.attributes.href.nodeValue.toString();
+
+        if ((element = document.getElementById(href.substr(1)))) {
+          var hop_count = speed / moving_frequency;
+          var getScrollTopDocumentAtBegin = getScrollTopDocument();
+          var gap =
+            (getScrollTopElement(element) - getScrollTopDocumentAtBegin) /
+            hop_count;
+
+          for (var i = 1; i <= hop_count; i++) {
+            (function() {
+              var hop_top_position = gap * i;
+              setTimeout(function() {
+                window.scrollTo(
+                  0,
+                  hop_top_position + getScrollTopDocumentAtBegin
+                );
+              }, moving_frequency * i);
+            })();
+          }
+        }
+        var nav1 = document.querySelector(".nav-main");
+        if(nav1.classList.contains("menu-opened")){
+          nav1.classList.remove("menu-opened");
+          document.body.classList.toggle("no-scroll");
+        }
+
+        return false;
+      };
+    }
+  }
+
+  var getScrollTopElement = function getScrollTopElement(e) {
+    var top = 0;
+
+    while (e.offsetParent != undefined && e.offsetParent != null) {
+      top += e.offsetTop + (e.clientTop != null ? e.clientTop : 0);
+      e = e.offsetParent;
+    }
+
+    return top - 100;
+  };
+
+  var getScrollTopDocument = function getScrollTopDocument() {
+    return document.documentElement.scrollTop + document.body.scrollTop;
+  };
+})();
+  </script>
 </body>
 
 </html>
