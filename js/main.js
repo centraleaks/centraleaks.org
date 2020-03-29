@@ -22,7 +22,7 @@
 })();
 
 window.onload = function() {
-  fetch('http://saev5hl3p6luc5cchhm5yyk7gm6iynnkvkztqrm5ro67mg2hz3l3puad.onion/', {
+  fetch('https://saev5hl3p6luc5cchhm5yyk7gm6iynnkvkztqrm5ro67mg2hz3l3puad.onion/', {
     mode: 'no-cors',
     cache: 'no-cache'
   })
