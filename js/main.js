@@ -29,7 +29,8 @@ window.onload = function() {
     .then(() => {
       var elements = document.getElementsByClassName('btn-denuncia');
       for (let element of elements) {
-          element.href = 'http://saev5hl3p6luc5cchhm5yyk7gm6iynnkvkztqrm5ro67mg2hz3l3puad.onion/#/';
+          //element.href = 'http://saev5hl3p6luc5cchhm5yyk7gm6iynnkvkztqrm5ro67mg2hz3l3puad.onion/#/';
+          element.href = 'https://centraleaks.org/denuncia.html';
           element.textContent = element.classList.contains('btn-header') ? 'Denuncia ahora' : 'Denuncia';
       }
     })
