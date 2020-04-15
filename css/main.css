@@ -734,6 +734,14 @@ li > a.active:after {
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+.red-notice{
+  text-align: center;
+  padding: 1em;
+  background-color: #e81721;
+  color: #fff;
+  box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+  margin-bottom: 2em;
+}
 
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 1500px){
