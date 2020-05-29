@@ -124,7 +124,10 @@
       </div>
       <div class="aliado-item">
         <div class="row">
-          <div class="col-md-12 aliado-text">
+          <div class="col-md-4 aliado-img">
+            <img src="img/orgs/cum.png" alt="Logo del CUM">
+          </div>
+          <div class="col-md-8 aliado-text">
             <h2>CUM</h2>
             <p>
               El Centro Universitario de Monitoreo de Políticas y Medidas Anticorrupción (CUM) es una alianza estratégica entre la Universidad Francisco Gavidia y la Universidad Dr. José Matías Delgado. El CUM está orientado a suplir la falta de un mecanismo independiente de las entidades públicas para evaluar cómo están avanzando las medidas y políticas anticorrupción.
@@ -132,11 +135,25 @@
           </div>
         </div>
       </div>
-
+      
       <div class="aliado-item">
         <div class="row">
           <div class="col-md-4 aliado-img">
-            <a target="_blank" rel="noopener noreferrer" href="https://gatoencerrado.news/"><img src="img/orgs/gatoencerrado.png" alt="Logo del CUM"></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://focostv.com/"><img src="img/orgs/focostv.png" alt="Focos TV"></a>
+          </div>
+          <div class="col-md-8 aliado-text">
+            <h2>Focos TV</h2>
+            <p>
+              Revista multiplataforma de periodismo análisis, y opinión en El Salvador.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="aliado-item">
+        <div class="row">
+          <div class="col-md-4 aliado-img">
+            <a target="_blank" rel="noopener noreferrer" href="https://gatoencerrado.news/"><img src="img/orgs/gatoencerrado.png" alt="Revista GatoEncerrado"></a>
           </div>
           <div class="col-md-8 aliado-text">
             <h2>Revista GatoEncerrado</h2>
@@ -146,6 +163,7 @@
           </div>
         </div>
       </div>
+      
     </div>
     </section>
 
@@ -171,25 +189,9 @@
     </div>
     <a class="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank" rel="noopener noreferrer"><img src="img/by-sa.svg" alt="Ícono de licencia Creative Commons"></a>
   </footer>
-  <div class="overlay is-visible" id="overlay"></div>
-  <div class="modal is-visible" id="modal">
-    <button class="modal-close-btn" id="close-btn"><svg viewbox="0 0 40 40">
-      <path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30" />
-    </svg></button>
-    De momento estamos realizando las últimas revisiones a la plataforma para garantizar un proceso de denuncia completamente seguro, por lo que la entrega de información está deshabilitada, pero muy pronto estará disponible.
-  </div>
   <!--Scripts-->
   <script src="/js/main.js"></script>
   <script>
-    "use strict";
-    document.getElementById('close-btn').addEventListener('click', function() {
-  document.getElementById('overlay').classList.remove('is-visible');
-  document.getElementById('modal').classList.remove('is-visible');
-});
-document.getElementById('overlay').addEventListener('click', function() {
-  document.getElementById('overlay').classList.remove('is-visible');
-  document.getElementById('modal').classList.remove('is-visible');
-});
 
 (function() // Code in a function to create an isolate scope
 {
