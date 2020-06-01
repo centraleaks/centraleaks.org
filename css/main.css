@@ -589,6 +589,10 @@ body > section{
 .acerca-de p{
     font-size: 1.2em;
 }
+.project-from p{
+  font-size: 1.1em;
+  font-weight: 600;
+}
 
 .aliado-item{
   margin: 4em 0;
@@ -637,9 +641,12 @@ body > section{
 .footer{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   background-color: #212121;
   padding: 2em;
+}
+.footer-project{
+  margin-bottom: 1em;
 }
 
 .footer .email{
@@ -664,7 +671,9 @@ body > section{
 .footer .email a.pgp{
   color: #F6662A
 }
-
+.footer .license{
+  text-align: right;
+}
 .footer .license img{
   max-width: 90px;
 }
@@ -888,14 +897,6 @@ li > a.active:after {
            transition-delay: 0.69s;
       }
 
-      .footer{
-        flex-direction: column;
-      }
-
-      .footer > div{
-        margin-bottom: 2em;
-      }
-
       body{
         font-size: 0.9rem;
       }
@@ -907,6 +908,17 @@ li > a.active:after {
   }
   .aliado-text{
     text-align: center;
+  }
+  
+  .footer{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .social, .footer .license{
+    text-align: center;
+  }
+  .footer > div{
+    margin-bottom: 2em;
   }
 }
 
