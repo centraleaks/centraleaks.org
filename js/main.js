@@ -22,7 +22,6 @@
 })();
 
 window.onload = function() {
-  try{
   fetch('https://3g2upl4pq6kufc4m.onion/', {
     mode: 'no-cors',
     cache: 'no-cache'
@@ -42,8 +41,6 @@ window.onload = function() {
           element.textContent = element.classList.contains('btn-header') ? 'Denuncia ahora' : 'Denuncia';
       }
     });
-  }
-  catch(error){}
 }
 
 function copyText() {
