@@ -5,6 +5,7 @@
         url('NHaasGroteskDSPro-65Md.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -14,5 +15,6 @@
         url('NHaasGroteskTXPro-55Rg.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 

@@ -35,6 +35,7 @@
   <meta name="og:locale" content="es_ES">
   <meta name="og:type" content="website">
   <!--Styles-->
+  <link rel="preload" href="/css/fonts/NHaasGroteskTXPro-55Rg.woff2" as="font" type="font/woff2">
   <link rel="stylesheet" href="/css/fonts/nhg.css">
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
@@ -205,7 +206,7 @@
     <h2>Ingresa tu código de denuncia a través de Tor para dar seguimiento a tu caso.</h2>
     <div class="link-tor">
       <button onclick="copyText()" class="button"><img src="img/link.svg" alt="Ícono de link">Copiar link de Tor</button>
-      <input id="copy" class="center" type="text" readonly value="saev5hl3p6luc5cchhm5yyk7gm6iynnkvkztqrm5ro67mg2hz3l3puad.onion">
+      <input aria-label="Enlace de Tor" id="copy" class="center" type="text" readonly value="saev5hl3p6luc5cchhm5yyk7gm6iynnkvkztqrm5ro67mg2hz3l3puad.onion">
     </div>
   </div>
   </section>

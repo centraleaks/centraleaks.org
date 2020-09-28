@@ -22,6 +22,7 @@
 })();
 
 window.onload = function() {
+  try{
   fetch('https://3g2upl4pq6kufc4m.onion/', {
     mode: 'no-cors',
     cache: 'no-cache'
@@ -34,13 +35,15 @@ window.onload = function() {
           element.textContent = element.classList.contains('btn-header') ? 'Denuncia ahora' : 'Denuncia';
       }
     })
-    .catch(() => {
+    .catch((error) => {
       var elements = document.getElementsByClassName('btn-denuncia');
       for (let element of elements) {
           element.href = 'https://centraleaks.org/denuncia.html';
           element.textContent = element.classList.contains('btn-header') ? 'Denuncia ahora' : 'Denuncia';
       }
     });
+  }
+  catch(error){}
 }
 
 function copyText() {
@@ -195,12 +198,14 @@ function accordion() {
 
         if (this.classList.contains("active")) {
           this.classList.remove("active");
+          this.parentNode.setAttribute("aria-expanded", "false");
         } else {
           var active = document
             .querySelector(".accordion")
             .querySelector("a.active");
           if (active != null) active.classList.remove("active");
           this.classList.add("active");
+          this.parentNode.setAttribute("aria-expanded", "true");
         }
 
         slideToggle(dropDown);
