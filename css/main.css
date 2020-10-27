@@ -21,12 +21,12 @@ html {
  */
 
 ::-moz-selection {
-  background: #b3d4fc;
+  background: #969cff;
   text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
+  background: #969cff;
   text-shadow: none;
 }
 
@@ -614,11 +614,18 @@ body > section{
   margin-top: 2.5em;
   margin-bottom: 2.5em;
 }
+.link-tor .link-element{
+  display: inline-block;
+  background: #eaeaea;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.45);
+}
 .link-tor button{
   background-color: #f6662a;
-  padding: 0.45em 0.8em;
+  padding: 0.75em 0.8em;
   vertical-align: middle;
   min-width: 14.3em;
+  transition: background-color 0.4s ease-in-out;
+  border: 0;
 }
 .link-tor button.button:hover, .link-tor button.button:active{
   background-color: #f6662a;
@@ -626,11 +633,17 @@ body > section{
   cursor: pointer;
 }
 
+.link-tor .button.copied{
+  background-color: #30c652 !important;
+}
+
 .link-tor input{
   width: 36em;
   max-width: 100%;
-  padding: 0.45em 0.35em;
+  padding: 0.75em 0.8em;
   vertical-align: middle;
+  background: #eaeaea;
+  border: 0;
 }
 
 .link-tor button img{
@@ -769,9 +782,14 @@ li > a.active:after {
   }
 }
 @media only screen and (max-width: 991px){
-  .link-tor{
+  .link-tor .link-element{
     display: flex;
     flex-direction: column-reverse;
+    background: transparent;
+    box-shadow: none;
+  }
+  .link-tor .button{
+    box-shadow: 5px 7px 5px 0px rgba(0,0,0,0.45);
   }
   .link-tor button, .link-tor input{
     width: 100%;

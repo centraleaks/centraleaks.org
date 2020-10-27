@@ -205,8 +205,9 @@
   <div class="container center">
     <h2>Ingresa tu código de denuncia a través de Tor para dar seguimiento a tu caso.</h2>
     <div class="link-tor">
-      <button onclick="copyText()" class="button"><img src="img/link.svg" alt="Ícono de link">Copiar link de Tor</button>
-      <input aria-label="Enlace de Tor" id="copy" class="center" type="text" readonly value="saev5hl3p6luc5cchhm5yyk7gm6iynnkvkztqrm5ro67mg2hz3l3puad.onion">
+      <div class="link-element">
+      <button id="copy-clipboard" onclick="copyText()" class="button"><img src="img/link.svg" alt="Ícono de link"><span>Copiar link de Tor</span></button><input aria-label="Enlace de Tor" id="copy" class="center" type="text" readonly value="saev5hl3p6luc5cchhm5yyk7gm6iynnkvkztqrm5ro67mg2hz3l3puad.onion">
+      </div>
     </div>
   </div>
   </section>

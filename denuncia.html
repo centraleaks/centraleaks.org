@@ -75,8 +75,9 @@
         <p>Si aún no tienes el navegador Tor, <a href="https://www.torproject.org/es/download/" target="_blank" rel="noopener noreferrer">descárgalo</a>. (Tor resguarda tu privacidad y anonimato).</p>
         <p> Una vez dentro de él, dirígete al siguiente link:</p>
         <div class="link-tor center">
-          <button onclick="copyText()" class="button"><img src="img/link.svg" alt="Ícono de link">Copiar link de Tor</button>
-          <input id="copy" class="center" type="text" readonly value="saev5hl3p6luc5cchhm5yyk7gm6iynnkvkztqrm5ro67mg2hz3l3puad.onion">
+          <div class="link-element">
+          <button id="copy-clipboard" onclick="copyText()" class="button"><img src="img/link.svg" alt="Ícono de link"><span>Copiar link de Tor</span></button><input aria-label="Enlace de Tor" id="copy" class="center" type="text" readonly value="saev5hl3p6luc5cchhm5yyk7gm6iynnkvkztqrm5ro67mg2hz3l3puad.onion">
+          </div>
         </div>
         <p>1. Escoge a los medios de comunicación con los que deseas compartir tu denuncia.</p>
         <p>2. Completa la información sobre el caso y adjunta documentos de evidencia.</p>

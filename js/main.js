@@ -46,7 +46,18 @@ window.onload = function() {
 function copyText() {
   document.getElementById("copy").select();
   document.execCommand("copy");
-  alert("Texto copiado en el portapapeles.");
+  textCopied();
+}
+
+function textCopied(){
+  let button = document.getElementById('copy-clipboard');
+  button.classList.add('copied');
+  let spanElement = button.querySelector('span');
+  spanElement.innerHTML = '¡Link copiado!';
+  setTimeout(()=>{
+    button.classList.remove('copied');
+    spanElement.innerHTML = 'Copiar link de tor';
+  }, 1250);
 }
 
 function domReady(fn) {
