@@ -13,6 +13,6 @@ exports.handler = async ({ headers }) => {
 	return {
 	statusCode: 200,
 	body: `[{"ip": "${ip}","istor": ${tor.toString()}}]`,
-	headers: { "content-type": "text/html; charset=UTF-8" }
+	headers: { "content-type": "application/json; charset=UTF-8" }
 	};
 };
