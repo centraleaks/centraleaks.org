@@ -21,28 +21,6 @@
   domReady(accordion);
 })();
 
-window.onload = function() {
-  fetch('https://3g2upl4pq6kufc4m.onion/', {
-    mode: 'no-cors',
-    cache: 'no-cache'
-  })
-    .then(() => {
-      var elements = document.getElementsByClassName('btn-denuncia');
-      for (let element of elements) {
-          element.href = 'http://saev5hl3p6luc5cchhm5yyk7gm6iynnkvkztqrm5ro67mg2hz3l3puad.onion/#/';
-          //element.href = 'https://centraleaks.org/denuncia.html';
-          element.textContent = element.classList.contains('btn-header') ? 'Denuncia ahora' : 'Denuncia';
-      }
-    })
-    .catch((error) => {
-      var elements = document.getElementsByClassName('btn-denuncia');
-      for (let element of elements) {
-          element.href = 'https://centraleaks.org/denuncia.html';
-          element.textContent = element.classList.contains('btn-header') ? 'Denuncia ahora' : 'Denuncia';
-      }
-    });
-}
-
 function copyText() {
   document.getElementById("copy").select();
   document.execCommand("copy");
