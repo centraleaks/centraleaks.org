@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "Sitio web informativo de Centraleaks",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/centraleaks/centraleaks.org.git"
@@ -17,6 +16,6 @@
   },
   "homepage": "https://github.com/centraleaks/centraleaks.org#readme",
   "dependencies": {
-    "tor-detect": "^1.0.7"
+    "istorexit": "^0.10.1"
   }
 }

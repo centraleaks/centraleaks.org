@@ -1,8 +1,8 @@
-const torDetect = require('tor-detect');
+const IsTorExit = require("istorexit");
 
 function isTor(ip) { 
     return new Promise(function (resolve, reject) { 
-    	torDetect(ip).then(tor => {
+    	IsTorExit(ip).then(tor => {
     		resolve(tor); 
 		});
     }); 
