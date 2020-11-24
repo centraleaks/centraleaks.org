@@ -71,6 +71,7 @@ h1, h2, h3, h4, h5, h6{
 #LoginStatusBox{
   display: inline-block;
   margin-top: 2rem;
+  float: none !important;
 }
 
 #LogoBox{
@@ -95,7 +96,10 @@ h1, h2, h3, h4, h5, h6{
 #FooterBox{
   padding: 1rem;
 }
- .ext-public .btn, #ReceiptButton, #WhistleblowingButton .btn{
+#WhistleblowingButton{
+  margin-top: 0.5rem;
+}
+.whistleblower .btn, #ReceiptButton, #WhistleblowingButton.btn{
   background-color: transparent !important;
   padding: 0.35em 0.8em !important;
   border: 2px solid #363D3D !important;
@@ -117,46 +121,47 @@ h1, h2, h3, h4, h5, h6{
   border-color: #707a8a !important;
   color: #fff !important;
 }
-.ext-public .btn:hover, .ext-public .btn:active, #ReceiptButton:hover, #ReceiptButton:active, #WhistleblowingButton .btn:hover, #WhistleblowingButton .btn:active{
+.whistleblower .btn:hover, .whistleblower .btn:active, #ReceiptButton:hover, #ReceiptButton:active, #WhistleblowingButton.btn:hover, #WhistleblowingButton.btn:active{
   background-color: #F6662A !important;
   color: #fff !important;
   border-color: #F6662A !important;
 }
 
-.ext-public .btn.btn-success:hover, .ext-public .btn.btn-success:active{
+.whistleblower.btn.btn-success:hover, .whistleblower .btn.btn-success:active{
   background-color: #30c652 !important;
   color: #fff !important;
   border-color: #30c652 !important;
 }
 
-.ext-public .receiverCard.selected{
+.whistleblower .selectCard.selected{
   border: 0;
   background-color: #bbbeff;
   color: #393939;
 }
-.ext-public .receiverCard{
+.whistleblower .selectCard{
   box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.35);
   font-size: .9rem;
   border-radius: 0px;
+  background-color: #fffcf1;
 }
 
-.ext-public .question-label{
+.whistleblower .question-label{
   text-transform: uppercase;
   font-size: .9rem;
 }
 
-.ext-public .form-control, .ext-public .custom-select{
+.whistleblower .form-control, .whistleblower .custom-select{
   box-shadow:0 0 15px 4px rgba(0,0,0,0.06) !important;
 }
-.ext-public .form-control:focus, .ext-public .custom-select:focus{
+.whistleblower .form-control:focus, .whistleblower .custom-select:focus{
   border-color: #c8d1e0 !important;
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(145, 145, 145, 0.6) !important;
 }
 
-.ext-public .nav-tabs .nav-link{
+.whistleblower .nav-tabs .nav-link{
   position: relative;
   display: inline-block;
-  padding: 10px 10px 22px !important;
+  padding: 10px !important;
   border: 1px solid transparent !important;
   border-radius: 0px !important;
   cursor: pointer;
@@ -165,7 +170,7 @@ h1, h2, h3, h4, h5, h6{
   font-size: .8rem;
   color: #363D3D;
 }
-.ext-public .nav-tabs .nav-link.active{
+.whistleblower .nav-tabs .nav-link.active{
   color: #363D3D;
   border-color: #ccc !important;
   border-bottom: 1px solid #fff !important;
@@ -173,7 +178,7 @@ h1, h2, h3, h4, h5, h6{
   box-shadow: 0px -1px 5px 2px rgba(0,0,0,.1);
   z-index: 1;
 }
-.ext-public .nav-tabs .nav-link::after{
+/*.whistleblower .nav-tabs .nav-link::after{
   content: "";
   position: absolute;
   left: 15px;
@@ -183,11 +188,11 @@ h1, h2, h3, h4, h5, h6{
   background: #8d8d8d;
 }
 
-.ext-public .nav-tabs .nav-link.active::after{
+.whistleblower .nav-tabs .nav-link.active::after{
   background: #06c;
-}
+}*/
 
-.ext-public #ReceiptText{
+.whistleblower #ReceiptText{
   text-align: center !important;
 }
 
@@ -206,6 +211,12 @@ h1, h2, h3, h4, h5, h6{
   display: inline-block;
   max-width: 420px;
   background-color: #fff;
+}
+#WhistleblowerSubmitBox{
+  margin-top: 2rem;
+}
+#WhistleblowerLoginBox, #WhistleblowerSubmitBox {
+    font-size: 1rem;
 }
 #WhistleblowerLoginForm{
   margin-top: 1.2rem;

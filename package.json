@@ -1,0 +1,22 @@
+{
+  "name": "centraleaks.org",
+  "version": "1.0.0",
+  "description": "Sitio web informativo de Centraleaks",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/centraleaks/centraleaks.org.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/centraleaks/centraleaks.org/issues"
+  },
+  "homepage": "https://github.com/centraleaks/centraleaks.org#readme",
+  "dependencies": {
+    "tor-detect": "^1.0.7"
+  }
+}
