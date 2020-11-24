@@ -11,8 +11,10 @@ exports.handler = async ({ headers }) => {
 	const ip = headers["client-ip"];
 	var tor = await isTor(ip);
 	return {
-	statusCode: 200,
-	body: `[{"ip": "${ip}","istor": ${tor.toString()}}]`,
-	headers: { "content-type": "application/json; charset=UTF-8" }
+	statusCode: 302,
+	body: '',
+  headers: {
+    location: tor ? 'http://saev5hl3p6luc5cchhm5yyk7gm6iynnkvkztqrm5ro67mg2hz3l3puad.onion/#/' : 'https://centraleaks.org/denuncia.html'
+  }
 	};
 };
