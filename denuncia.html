@@ -64,31 +64,102 @@
       <li class="denuncia"><a class="button btn-denuncia" href="https://centraleaks.org/denunciar">Denuncia</a></li>
     </ul>
 </nav>
-
-  <section class="denuncia-section">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-sm-12">
-      <div class="title-container">
-      <h1 class="title">Denuncia</h1>
-      </div>
-        <p>Si aún no tienes el navegador Tor, <a href="https://www.torproject.org/es/download/" target="_blank" rel="noopener noreferrer">descárgalo</a>. (Tor resguarda tu privacidad y anonimato).</p>
-        <p> Una vez dentro de él, dirígete al siguiente link:</p>
-        <div class="link-tor center">
-          <div class="link-element">
-          <button id="copy-clipboard" onclick="copyText()" class="button"><img src="img/link.svg" alt="Ícono de link"><span>Copiar link de Tor</span></button><input aria-label="Enlace de Tor" id="copy" class="center" type="text" readonly value="saev5hl3p6luc5cchhm5yyk7gm6iynnkvkztqrm5ro67mg2hz3l3puad.onion">
-          </div>
-        </div>
-        <p>1. Escoge a los medios de comunicación con los que deseas compartir tu denuncia.</p>
-        <p>2. Completa la información sobre el caso y adjunta documentos de evidencia.</p>
-        <p>3. Al enviar tu denuncia no olvides guardar en un lugar seguro el código que se te entregará, ya que solo con él podrás darle seguimiento a tu caso y ponerte en contacto con los medios que seleccionaste.</p>
-        <p>4. Revisa el estado de la denuncia periódicamente. Puede que los periodistas necesiten más información o haya otra novedad.</p>
-        <p>Para proteger tu anonimato es de suma importancia que no hagas publicaciones sobre la entrega, ni lo comentes con cercanos, en especial si tienen algún vínculo con el caso.</p>
-        <p>Nota: No todas las denuncias recibidas en Centraleaks serán publicadas por los medios de comunicación. Queda a criterio de cada medio el definir si estas denuncias son de su interés para investigarlas, y (si son investigadas) si cumplen con estándares de veracidad que permitan su publicación.</p>
-      </div>
+  
+  <section class="tabs-section">
+    <div class="center">
+        <h1 class="title title-no-underline">Denuncia</h1>
     </div>
-  </div>
+    <div class="tabs tabs-style-iconbox">
+      <nav>
+        <ul>
+          <li class="tab-current"><a href="#section-iconbox-1" class="icon"><span><svg class="icons icon1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#545454" viewBox="0 0 16 16"><path d="M6 2H13C13.5523 2 14 2.44772 14 3V9C14 9.55229 13.5523 10 13 10H8V11H10V12H8V13H11.5C11.7761 13 12 12.7761 12 12.5 12 12.2239 11.7761 12 11.5 12H11V11H13C14.1046 11 15 10.1046 15 9V3C15 1.89543 14.1046 1 13 1H6C4.89543 1 4 1.89543 4 3V5H5V3C5 2.44772 5.44772 2 6 2zM3.5 12C3.22386 12 3 12.2239 3 12.5 3 12.7761 3.22386 13 3.5 13H4.5C4.77614 13 5 12.7761 5 12.5 5 12.2239 4.77614 12 4.5 12H3.5z"/><path d="M2.5 6C1.67157 6 1 6.67157 1 7.5V13.5C1 14.3284 1.67157 15 2.5 15H5.5C6.32843 15 7 14.3284 7 13.5V7.5C7 6.67157 6.32843 6 5.5 6H2.5ZM2.5 7H5.5C5.77614 7 6 7.22386 6 7.5V13.5C6 13.7761 5.77614 14 5.5 14H2.5C2.22386 14 2 13.7761 2 13.5V7.5C2 7.22386 2.22386 7 2.5 7Z"/></svg>Navegador Tor</span></a></li>
+          <li><a href="#section-iconbox-2" class="icon"><span><svg class="icons icon2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#545454" viewBox="0 0 16 16"><path d="M1 4.5C1 3.11929 2.11929 2 3.5 2H12.5C13.8807 2 15 3.11929 15 4.5V9.5C15 10.8807 13.8807 12 12.5 12H8.68787L5.62533 14.6797C4.99168 15.2342 4 14.7842 4 13.9422V12H3.5C2.11929 12 1 10.8807 1 9.5V4.5ZM3.5 3C2.67157 3 2 3.67157 2 4.5V9.5C2 10.3284 2.67157 11 3.5 11H5V13.8981L8.31213 11H12.5C13.3284 11 14 10.3284 14 9.5V4.5C14 3.67157 13.3284 3 12.5 3H3.5Z"/></svg>Signal</span></a></li>
+        </ul>
+      </nav>
+      <div class="content-wrap container">
+        <section id="section-iconbox-1" class="content-current">
+            <div class="step row align-items-center center">
+              <div class="col-md-5"><img class="step-img" src="/img/step1.png" alt="Descarga Tor"></div>
+              <div class="col-md-7">
+                <h2>Protege tu anonimato con Tor</h2>
+                <p>Para acceder a la plataforma de denuncias debes descargar el navegador Tor que impide que tu actividad web, ubicación e identidad sean rastreadas.</p>
+                <a class="button btn-primary display" href="https://www.torproject.org/es/download/" target="_blank" rel="noopener noreferrer">Descargar Tor</a>
+              </div>
+            </div>
+            <div class="step row align-items-center flex-md-row-reverse center">
+              <div class="col-md-5"><img class="step-img" src="/img/step2.png" alt="Documentos"></div>
+              <div class="col-md-7">
+                <h2>Realiza tu denuncia</h2>
+                <p>Dentro de Tor, dirígete al siguiente enlace:</p>
+                <div class="link-tor link-tor-small center">
+                  <div class="link-element">
+                  <button id="copy-clipboard" onclick="copyText()" class="button button-icon"><img src="img/link.svg" alt="Ícono de link"><span>Copiar link de Tor</span></button><input aria-label="Enlace de Tor" id="copy" class="center" type="text" readonly value="saev5hl3p6luc5cchhm5yyk7gm6iynnkvkztqrm5ro67mg2hz3l3puad.onion">
+                  </div>
+                </div>
+                <p>Haz un resumen de la información y adjunta documentos de evidencia.</p>
+              </div>
+            </div>
+            <div class="step row align-items-center center">
+              <div class="col-md-5"><img class="step-img" src="/img/step3.png" alt="Código"></div>
+              <div class="col-md-7">
+                <h2>Seguimiento del caso</h2>
+                <p>Al enviar tu denuncia, no olvides guardar el código proporcionado en un lugar seguro.</p>
+                <p>Solo con él podrás darle seguimiento a tu caso y ponerte en contacto con los medios que seleccionaste</p>
+              </div>
+            </div>
+            <div class="step row align-items-center center flex-md-row-reverse">
+              <div class="col-md-5"><img class="step-img" src="/img/step4.png" alt="Recomendaciones"></div>
+              <div class="col-md-7">
+                <h2>Recomendaciones</h2>
+                <ul class="ul-check">
+                  <li>Haz tu denuncia fuera de la red del trabajo y utiliza un dispositivo personal que no sea monitoreado.</li>
+                  <li>No hagas publicaciones sobre la entrega, ni lo comentes con cercanos.</li>
+                  <li>Revisa el estado de la denuncia periódicamente.</li>
+                </ul>
+              </div>
+            </div>
+        </section>
+        <section id="section-iconbox-2">
+          <div class="step row align-items-center center">
+            <div class="col-md-5"><img class="step-img" src="/img/signal_step1.png" alt="Descarga Signal"></div>
+            <div class="col-md-7">
+              <h2>Descarga la app Signal</h2>
+              <p>Signal es una aplicación de mensajería enfocada en la privacidad y seguridad, con cifrado de extremo a extremo, por lo que nadie externo a una conversación podrá saber el contenido de los mensajes, ni a quién van dirigidos.</p>
+              <a class="button btn-primary display" href="https://signal.org/es/download/" target="_blank" rel="noopener noreferrer">Descargar Signal</a>
+            </div>
+          </div>
+          <div class="step row align-items-center flex-md-row-reverse center">
+            <div class="col-md-5"><img class="step-img" src="/img/signal_step2.png" alt="Documentos"></div>
+            <div class="col-md-7">
+              <h2>Realiza tu denuncia</h2>
+              <p>Dentro de Signal, escribe al número <a href="intent://+50360100149#Intent;scheme=smsto;package=org.thoughtcrime.securesms;action=android.intent.action.SENDTO;end">+503 6010 0149</a>.
+                <br>No es necesario que guardes el número en tus contactos.</p>
+              <p>Haz un resumen de la información y adjunta documentos de evidencia.</p>
+            </div>
+          </div>
+          <div class="step row align-items-center center">
+            <div class="col-md-5"><img class="step-img" src="/img/signal_step3.png" alt="Recomendaciones"></div>
+            <div class="col-md-7">
+              <h2>Recomendaciones</h2>
+              <ul class="ul-check">
+                <li>Haz tu denuncia fuera de la red del trabajo y utiliza un dispositivo personal que no sea monitoreado.</li>
+                <li>No le des acceso a tus contactos a Signal.</li>
+                <li>Una vez  hayas realizada la denuncia y te respondamos, elimina la conversación.</li>
+                <li>No hagas publicaciones sobre la entrega, ni lo comentes con cercanos.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- /content -->
+    </div>
+    <!-- /tabs -->
+    
+    <div class="container"> 
+      <p>Nota: No todas las denuncias recibidas en Centraleaks serán publicadas por los medios de comunicación. Queda a criterio de cada medio, definir si estas denuncias son de su interés para investigarlas, y (si son investigadas) si cumplen con estándares de veracidad que permitan su publicación.</p>
+    </div>
   </section>
+  
 
   <footer class="footer">
     <div class="social col-md-4">
@@ -107,6 +178,8 @@
   </footer>
   <!--Scripts-->
   <script src="/js/main.js"></script>
+  <script src="/js/cbpFWTabs.js"></script>
+  <script>(function(){[].slice.call(document.querySelectorAll('.tabs')).forEach(function(el){new CBPFWTabs(el)})})();</script>
 </body>
 
 </html>

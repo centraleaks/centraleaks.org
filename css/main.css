@@ -275,6 +275,9 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 500;
   font-style: normal;
 }
+h2{
+  font-size: 2em;
+}
 
 a{
   text-decoration: none;
@@ -311,6 +314,9 @@ a:hover, a:active{
 .center .title:after{
   margin-left: -15%;
 }
+.title.title-no-underline::after{
+  display: none;
+}
 
 .button{
   background-color: transparent;
@@ -326,8 +332,9 @@ a:hover, a:active{
   appearance: none;
 }
 
-.button{
-  color: #fff;
+.button.btn-primary{
+  border-color: #363D3D;
+  color: #363D3D;
 }
 .button:hover, .button:active{
   border-color: #fff;
@@ -450,6 +457,11 @@ a:hover, a:active{
 }
 
 .nav-main.white .button:hover, .nav-main.white .button:active{
+  background-color: #F6662A;
+  color: #fff;
+  border-color: #F6662A;
+}
+.button.btn-primary:hover, .button.btn-primary:active{
   background-color: #F6662A;
   color: #fff;
   border-color: #F6662A;
@@ -619,7 +631,29 @@ body > section{
   background: #eaeaea;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.45);
 }
-.link-tor button{
+.link-tor-small{
+  font-size: 0.9em;
+}
+.link-tor-small .link-element{
+  display: flex;
+  flex-direction: column-reverse;
+  background: transparent;
+  box-shadow: none;
+  max-width: 34em;
+  margin: auto;
+}
+.link-small .button{
+  box-shadow: 5px 7px 5px 0px rgba(0,0,0,0.45);
+}
+.link-tor-small button, .link-tor input{
+  width: 100%;
+}
+.link-tor-small input{
+  margin-bottom: 0.3em;
+  width: 100% !important;
+}
+.button-icon{
+  color: #fff;
   background-color: #f6662a;
   padding: 0.75em 0.8em;
   vertical-align: middle;
@@ -627,8 +661,8 @@ body > section{
   transition: background-color 0.4s ease-in-out;
   border: 0;
 }
-.link-tor button.button:hover, .link-tor button.button:active{
-  background-color: #f6662a;
+.button.button-icon:hover, .button.button-icon:active{
+  background-color: #E86027;
   color: #fff;
   cursor: pointer;
 }
@@ -646,7 +680,7 @@ body > section{
   border: 0;
 }
 
-.link-tor button img{
+.button-icon img, .button img{
   max-width: 1.5em;
   margin-right: 0.4em;
 }
@@ -764,6 +798,287 @@ li > a.active:after {
   box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
   margin-bottom: 2em;
 }
+
+/*MODAL*/
+/** Common */
+
+/** Modal */
+.modal {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+    position:fixed;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  font-size: 1rem;
+  z-index: 1001;
+  width: 90%;
+}
+.modal-close-btn {
+    margin: 0;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  position: relative;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+}
+.modal-close-btn svg{
+  width: 1rem;
+  height: auto;
+}
+
+/** Overlay */
+
+/** JS */
+.overlay {
+  z-index: 1000;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+.modal.is-visible, .overlay.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.close-x {
+  stroke: black;
+  fill: transparent;
+  stroke-linecap: round;
+  stroke-width: 5;
+}
+/*END MODAL*/
+
+/*TABS*/
+.tabs-section nav a {
+  color: #AEAEAE;
+  text-decoration: none;
+  outline: none;
+}
+
+.tabs nav li .icons {
+  display: block;
+  margin: auto;
+  width: 50px;
+  height: auto;
+  fill: #AEAEAE;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.tabs nav li.tab-current .icons {
+  fill: #757575;
+}
+
+.tabs-section nav a:hover .icons, .tabs-section nav a:focus .icons {
+  fill: #757575;
+}
+
+.tabs-section nav a:hover, .tabs-section nav a:focus {
+  color: #757575;
+}
+
+.tabs-section {
+  padding: 0;
+  min-height: 100%;
+}
+/** tabs.scss */
+/* Default tab style */
+.tabs {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  font-weight: 300;
+}
+
+/* Nav */
+.tabs nav {
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.tabs nav ul {
+  position: relative;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+  list-style: none;
+  -ms-box-orient: horizontal;
+  -ms-box-pack: center;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+
+.tabs nav ul li {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 0;
+  text-align: center;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.tabs nav a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 2.5;
+}
+
+.tabs nav a span {
+  vertical-align: middle;
+  font-size: 0.75em;
+}
+
+.tabs nav li.tab-current a {
+  color: #757575;
+}
+
+.tabs nav a:focus {
+  outline: none;
+}
+
+/* Icons */
+/* Content */
+.content-wrap {
+  position: relative;
+}
+
+.content-wrap section {
+  display: none;
+}
+
+.content-wrap section.content-current {
+  display: block;
+}
+/** tabstyles.scss */
+/*****************************/
+/* Icon box */
+/*****************************/
+.tabs-style-iconbox nav {
+  background: #F6F6F6;
+}
+
+.tabs-style-iconbox nav ul li a {
+  overflow: visible;
+  padding: 2em 0;
+  line-height: 1;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.tabs-style-iconbox nav ul li a span {
+  font-weight: 700;
+  font-size: 0.7em;
+}
+
+.tabs-style-iconbox nav ul li.tab-current {
+  z-index: 100;
+}
+
+.tabs-style-iconbox nav ul li.tab-current a {
+  background: #E6E6E6;
+  box-shadow: -1px 0 0 #E6E6E6;
+  border-bottom: 3px solid #F6662A;
+}
+
+.tabs-style-iconbox nav ul li.tab-current a::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: 3px;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  border-width: 10px;
+  border-top-color: #F6662A;
+  content: '';
+  pointer-events: none;
+}
+
+.tabs-style-iconbox nav ul li:first-child::before,
+.tabs-style-iconbox nav ul li::after {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  z-index: -1;
+  width: 1px;
+  height: 60%;
+  background: rgba(0, 0, 0, 0.07);
+  content: '';
+}
+
+.tabs-style-iconbox nav ul li:first-child::before {
+  right: auto;
+  left: 0;
+}
+
+/*END TABS*/
+
+/*DENUNCIA PAGE*/
+.step-img{
+  width: 100%;
+  height: auto;
+  max-width: 380px;
+}
+.ul-check{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ul-check li{
+  margin-bottom: 1em;
+}
+.ul-check li::before {
+  content: "✔";
+  margin: 0px 20px 0 0px;
+  color: #080;
+}
+.step{
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+/*END DENUNCIA PAGE*/
 
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 1500px){
@@ -918,6 +1233,9 @@ li > a.active:after {
       body{
         font-size: 0.9rem;
       }
+      .link-tor-small{
+        font-size: 1em;
+      }
 
 }
 @media only screen and (max-width: 767px){
@@ -937,6 +1255,9 @@ li > a.active:after {
   }
   .footer > div{
     margin-bottom: 2em;
+  }
+  .step-img{
+    max-width: 330px;
   }
 }
 
@@ -963,80 +1284,7 @@ li > a.active:after {
 }
 
 @media only screen and (min-height: 800px){
-  section.denuncia-section, section.faq-section {
+  section.tabs-section, section.faq-section {
     min-height: 90%;
   }
 }
-
-
-/*MODAL*/
-/** Common */
-
-/** Modal */
-.modal {
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.3s;
-    position:fixed;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 30px;
-  background: #fff;
-  border-radius: 4px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-  font-size: 1rem;
-  z-index: 1001;
-  width: 90%;
-}
-.modal-close-btn {
-    margin: 0;
-  border: none;
-  border-radius: 0;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  position: relative;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  font-size: 20px;
-}
-.modal-close-btn svg{
-  width: 1rem;
-  height: auto;
-}
-
-/** Overlay */
-
-/** JS */
-.overlay {
-  z-index: 1000;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.3s;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.3);
-}
-.modal.is-visible, .overlay.is-visible {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.close-x {
-  stroke: black;
-  fill: transparent;
-  stroke-linecap: round;
-  stroke-width: 5;
-}
-/*END MODAL*/
