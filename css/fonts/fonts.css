@@ -8,13 +8,14 @@
     font-display: swap;
 }
 
+/* roboto-regular */
 @font-face {
-    font-family: 'NHaasGroteskTXPro-55Rg';
-    src: url('NHaasGroteskTXPro-55Rg.woff2') format('woff2'),
-        url('NHaasGroteskTXPro-55Rg.woff') format('woff'),
-        url('NHaasGroteskTXPro-55Rg.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Roboto';
+  src: local(''),
+       url('roboto-regular.woff2') format('woff2'),
+       url('roboto-regular.woff') format('woff'),
+       url('roboto-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-

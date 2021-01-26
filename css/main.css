@@ -21,12 +21,16 @@ html {
  */
 
 ::-moz-selection {
-  background: #969cff;
+  background: #6e60af;
+  background: rgba(67, 49, 151, 0.77);
+  color: #fff;
   text-shadow: none;
 }
 
 ::selection {
-  background: #969cff;
+  background: #6e60af;
+  background: rgba(67, 49, 151, 0.77);
+  color: #fff;
   text-shadow: none;
 }
 
@@ -262,10 +266,10 @@ body, html {
   margin: 0;
 }
 body{
-  font-family: 'NHaasGroteskTXPro-55Rg', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 1rem;  
+  font-size: 1rem;
 }
 body.no-scroll{
   overflow: hidden;
@@ -283,10 +287,10 @@ a{
   text-decoration: none;
 }
 a:link, a:visited{
-  color: #000aaa;
+  color: #35228e;
 }
 a:hover, a:active{
-  color: #000666;
+  color: #4c31cc;
   text-decoration: underline;
 }
 .center{
@@ -308,8 +312,8 @@ a:hover, a:active{
   display: block;
   /*margin: 0 auto; */
   width: 130%;
-  padding-top: 5px; 
-  border-bottom: 3px solid #F6662A;
+  padding-top: 5px;
+  border-bottom: 3px solid #F4602C;
 }
 .center .title:after{
   margin-left: -15%;
@@ -403,9 +407,19 @@ a:hover, a:active{
   padding: 35px 50px 25px;
   height: 93px;
   z-index: 1000;
-  transition: all 0.5s ease-out, background-color 0.5s ease-out;
-  transition-delay: 0.2s;
+  transition: height 0.5s ease-out;
   font-size: 1rem;
+  background-color: transparent;
+}
+.nav-main.nav-animation{
+  animation-name: nav;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes nav {
+  from {background-color: #fff;}
+  to {background-color: transparent;}
 }
 .nav-main.white{
   background-color: #fff;
@@ -421,11 +435,26 @@ a:hover, a:active{
 
 .nav-main #logoc .cls-1{
   fill: #fff;
-  transition: fill 0.5s linear;
 }
 
 .nav-main.white #logoc .cls-1{
-  fill: #363D3D;
+  fill: #000;
+}
+.run-animation-1 #logoc .cls-1{
+  animation-name: nav-fill;
+  animation-duration: 0.6s;
+  animation-timing-function: linear;
+}
+.run-animation-2 #logoc .cls-1{
+  animation-name: nav-fill;
+  animation-duration: 0.4s;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+}
+
+@keyframes nav-fill {
+  from {fill: #fff;}
+  to {fill: #000;}
 }
 
 .nav-main ul{
@@ -457,14 +486,14 @@ a:hover, a:active{
 }
 
 .nav-main.white .button:hover, .nav-main.white .button:active{
-  background-color: #F6662A;
+  background-color: #F4602C;
   color: #fff;
-  border-color: #F6662A;
+  border-color: #F4602C;
 }
 .button.btn-primary:hover, .button.btn-primary:active{
-  background-color: #F6662A;
+  background-color: #F4602C;
   color: #fff;
-  border-color: #F6662A;
+  border-color: #F4602C;
 }
 
 .nav-main .burger-container {
@@ -495,7 +524,7 @@ a:hover, a:active{
      display: block;
      position: relative;
      background: #fff;
-     transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+     transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99), background 0s;
      transition-delay: 0s;
 }
 
@@ -553,7 +582,7 @@ img#video{
 /*HEADER*/
 .header-main {
   background-image: url("../img/header.png");
-  height: 100%; 
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -654,7 +683,7 @@ body > section{
 }
 .button-icon{
   color: #fff;
-  background-color: #f6662a;
+  background-color: #F4602C;
   padding: 0.75em 0.8em;
   vertical-align: middle;
   min-width: 14.3em;
@@ -662,7 +691,7 @@ body > section{
   border: 0;
 }
 .button.button-icon:hover, .button.button-icon:active{
-  background-color: #E86027;
+  background-color: #EB460C;
   color: #fff;
   cursor: pointer;
 }
@@ -689,7 +718,7 @@ body > section{
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  background-color: #212121;
+  background-color: #03022D;
   padding: 2em;
 }
 .footer-project{
@@ -716,7 +745,7 @@ body > section{
 }
 
 .footer .email a.pgp{
-  color: #F6662A
+  color: #F4602C
 }
 .footer .license{
   text-align: right;
@@ -1018,7 +1047,7 @@ li > a.active:after {
 .tabs-style-iconbox nav ul li.tab-current a {
   background: #E6E6E6;
   box-shadow: -1px 0 0 #E6E6E6;
-  border-bottom: 3px solid #F6662A;
+  border-bottom: 3px solid #F4602C;
 }
 
 .tabs-style-iconbox nav ul li.tab-current a::after {
@@ -1031,7 +1060,7 @@ li > a.active:after {
   height: 0;
   border: solid transparent;
   border-width: 10px;
-  border-top-color: #F6662A;
+  border-top-color: #F4602C;
   content: '';
   pointer-events: none;
 }
@@ -1175,21 +1204,21 @@ li > a.active:after {
       .nav-main.menu-opened{
         background-color: #fff;
         height: 420px;
-        transition: all 0.3s ease-in, background 0.5s ease-in;
+        transition: all 0.3s ease-in, background-color 0.5s ease-in;
         transition-delay: 0.25s;
         top: 0px !important;
       }
       .nav-main.menu-opened #logoc .cls-1{
-        fill: #363D3D;
+        fill: #000;
       }
       .nav-main.menu-opened .button{
         border-color: #363D3D;
         color: #363D3D;
       }
       .nav-main.menu-opened .button:hover, .nav-main.menu-opened .button:active{
-          background-color: #F6662A;
+          background-color: #F4602C;
           color: #fff;
-          border-color: #F6662A;
+          border-color: #F4602C;
       }
 
       .nav-main.menu-opened ul{
@@ -1245,7 +1274,7 @@ li > a.active:after {
   .aliado-text{
     text-align: center;
   }
-  
+
   .footer{
     flex-direction: column;
     align-items: center;

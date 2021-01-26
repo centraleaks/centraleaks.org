@@ -5,8 +5,24 @@
     nav = document.querySelector(".nav-main");
 
   burger.onclick = function() {
-    nav.classList.toggle("menu-opened");
+    var toggle = nav.classList.toggle("menu-opened");
     document.body.classList.toggle("no-scroll");
+    if(toggle && !nav.classList.contains("white")){
+      nav.classList.remove("run-animation-1");
+      nav.classList.remove("run-animation-2");
+      void nav.offsetWidth;
+      nav.classList.add("run-animation-1");
+    }
+    else if (!toggle && !nav.classList.contains("white")) {
+      nav.classList.remove("nav-animation");
+      nav.classList.remove("run-animation-2");
+      nav.classList.remove("run-animation-1");
+      nav.classList.remove("run-animation-2");
+      void nav.offsetWidth;
+      nav.classList.add("run-animation-2");
+      nav.classList.add("nav-animation");
+    }
+
   };
 
   document.addEventListener("click", function(event) {

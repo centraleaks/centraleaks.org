@@ -1,22 +1,24 @@
 @font-face {
     font-family: 'NHaasGroteskDSPro-65Md';
-    src: url('NHaasGroteskDSPro-65Md.woff2') format('woff2'),
-        url('NHaasGroteskDSPro-65Md.woff') format('woff'),
-        url('NHaasGroteskDSPro-65Md.ttf') format('truetype');
+    src: url('https://denuncias.centraleaks.org/s/NHaasGroteskDSPro-65Md.woff2') format('woff2'),
+        url('https://denuncias.centraleaks.org/s/NHaasGroteskDSPro-65Md.woff') format('woff'),
+        url('https://denuncias.centraleaks.org/s/NHaasGroteskDSPro-65Md.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'NHaasGroteskTXPro-55Rg';
-    src: url('NHaasGroteskTXPro-55Rg.woff2') format('woff2'),
-        url('NHaasGroteskTXPro-55Rg.woff') format('woff'),
-        url('NHaasGroteskTXPro-55Rg.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Roboto';
+  src: local(''),
+       url('https://denuncias.centraleaks.org/s/roboto-regular.woff2') format('woff2'),
+       url('https://denuncias.centraleaks.org/s/roboto-regular.woff') format('woff'),
+       url('https://denuncias.centraleaks.org/s/roboto-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
 ::-moz-selection {
   background: #969cff;
   text-shadow: none;
@@ -27,7 +29,7 @@
   text-shadow: none;
 }
 body{
-  font-family: 'NHaasGroteskTXPro-55Rg', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 1rem;  
@@ -41,8 +43,8 @@ h1, h2, h3, h4, h5, h6{
   background-color: #e9f0f5;
 }
 /*#HeaderBox{
-	background-color: #454a99;
-	color: #757575;
+  background-color: #454a99;
+  color: #757575;
   box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
   line-height: 1.9;
   width: 100%;
@@ -50,7 +52,7 @@ h1, h2, h3, h4, h5, h6{
   height: 93px;
 }*/
 #HeaderBox{
-	background-color: #e9f0f5;
+  background-color: #e9f0f5;
   line-height: 1.9;
   width: 100%;
   padding: 35px 50px 25px;
@@ -88,10 +90,10 @@ h1, h2, h3, h4, h5, h6{
   color: #fff;
 }
 #LogoBox img {
-  max-width: 160px;
+  max-width: 200px;
   width: 100%;
   height: auto;
-  max-height: 32.469px;
+  /*max-height: 32.469px;*/
 }
 #FooterBox{
   padding: 1rem;
