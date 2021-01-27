@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'NHaasGroteskDSPro-65Md';
-    src: url('https://denuncias.centraleaks.org/s/NHaasGroteskDSPro-65Md.woff2') format('woff2'),
-        url('https://denuncias.centraleaks.org/s/NHaasGroteskDSPro-65Md.woff') format('woff'),
-        url('https://denuncias.centraleaks.org/s/NHaasGroteskDSPro-65Md.ttf') format('truetype');
+    src: url('/s/NHaasGroteskDSPro-65Md.woff2') format('woff2'),
+        url('/s/NHaasGroteskDSPro-65Md.woff') format('woff'),
+        url('/s/NHaasGroteskDSPro-65Md.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -11,9 +11,9 @@
 @font-face {
   font-family: 'Roboto';
   src: local(''),
-       url('https://denuncias.centraleaks.org/s/roboto-regular.woff2') format('woff2'),
-       url('https://denuncias.centraleaks.org/s/roboto-regular.woff') format('woff'),
-       url('https://denuncias.centraleaks.org/s/roboto-regular.ttf') format('truetype');
+       url('/s/roboto-regular.woff2') format('woff2'),
+       url('/s/roboto-regular.woff') format('woff'),
+       url('/s/roboto-regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
