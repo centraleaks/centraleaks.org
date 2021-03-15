@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd' [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg enable-background="new 0 0 283.46 283.46" version="1.1" viewBox="0 0 283.46 283.46" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+	.st0{fill:#35228E;}
+	.st1{fill:#3259DB;}
+	.st2{fill:#F4602C;}
+	.st3{fill:#F9F3EF;}
+	.st4{fill:none;stroke:#F4602C;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#F4602C;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#3259DB;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#F9F3EF;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st8{fill:#03022D;}
+	.st9{fill:#5C310E;}
+	.st10{fill:#512A0C;}
+	.st11{fill:#2B2B2B;}
+	.st12{fill:#202020;}
+	.st13{fill:#E59163;stroke:#5C310E;stroke-width:0.5;stroke-miterlimit:10;}
+	.st14{fill:#F4A071;}
+	.st15{fill:none;stroke:#E28E60;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st16{fill:#DBD8D7;}
+	.st17{fill:none;stroke:#DBD8D7;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st18{fill:none;stroke:#3259DB;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st19{fill:#ED986E;}
+	.st20{fill:none;stroke:#F9F3EF;stroke-width:0.1;stroke-miterlimit:10;}
+	.st21{fill:#2C5FA8;}
+	.st22{fill:#F9F3EF;stroke:#35228E;stroke-width:1.5;stroke-miterlimit:10;}
+	.st23{fill:#FFFFFF;}
+	.st24{fill:none;stroke:#5C310E;stroke-width:0.25;stroke-linecap:round;stroke-miterlimit:10;}
+	.st25{fill:#F4A071;stroke:#5C310E;stroke-width:0.25;stroke-linecap:round;stroke-miterlimit:10;}
+	.st26{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st27{fill:none;stroke:#FFFFFF;stroke-width:0.75;stroke-miterlimit:10;}
+	.st28{fill:#35228E;stroke:#FFFFFF;stroke-width:0.75;stroke-miterlimit:10;}
+	.st29{fill:#F4602C;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
+</style>
+<switch>
+	<foreignObject width="1" height="1" requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/">
+	</foreignObject>
+	<g>
+					<path class="st2" d="m198.74 101.12h-22.02v-25.97c0-19.3-15.7-34.99-35-34.99s-35 15.7-35 34.99l-0.11 25.97h-21.89v-25.97c0-31.43 25.57-57.01 57.01-57.01s57.01 25.57 57.01 57.01v25.97zm-18.08-3.93h14.16v-22.04c0-29.27-23.81-53.08-53.08-53.08s-53.08 23.81-53.08 53.08v22.04h14.06l0.09-22.05c0-21.46 17.46-38.92 38.92-38.92s38.92 17.46 38.92 38.92v22.05z"/>
+					<path class="st1" d="m222.29 265.33h-161.12c-1.93 0-3.5-1.57-3.5-3.51v-161.13c0-1.93 1.57-3.51 3.5-3.51h161.13c1.93 0 3.51 1.57 3.51 3.51v161.12c-0.01 1.94-1.58 3.52-3.52 3.52zm-160.7-3.93h160.28v-160.28h-160.28v160.28z"/>
+					<path class="st1" d="m161.4 171.07c0-10.86-8.81-19.67-19.67-19.67s-19.67 8.81-19.67 19.67c0 7.38 4.12 13.74 10.14 17.11l-8.4 50.08c-0.22 1.3 0.78 2.48 2.1 2.48h31.67c1.31 0 2.31-1.18 2.1-2.48l-8.4-50.08c6.01-3.37 10.13-9.73 10.13-17.11z"/>
+	</g>
+</switch>
+</svg>

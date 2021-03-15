@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd' [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg enable-background="new 0 0 283.46 283.46" version="1.1" viewBox="0 0 283.46 283.46" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+	.st0{fill:#35228E;}
+	.st1{fill:#3259DB;}
+	.st2{fill:#F4602C;}
+	.st3{fill:#F9F3EF;}
+	.st4{fill:none;stroke:#F4602C;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#F4602C;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#3259DB;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#F9F3EF;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st8{fill:#03022D;}
+	.st9{fill:#5C310E;}
+	.st10{fill:#512A0C;}
+	.st11{fill:#2B2B2B;}
+	.st12{fill:#202020;}
+	.st13{fill:#E59163;stroke:#5C310E;stroke-width:0.5;stroke-miterlimit:10;}
+	.st14{fill:#F4A071;}
+	.st15{fill:none;stroke:#E28E60;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st16{fill:#DBD8D7;}
+	.st17{fill:none;stroke:#DBD8D7;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st18{fill:none;stroke:#3259DB;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st19{fill:#ED986E;}
+	.st20{fill:none;stroke:#F9F3EF;stroke-width:0.1;stroke-miterlimit:10;}
+	.st21{fill:#2C5FA8;}
+	.st22{fill:#F9F3EF;stroke:#35228E;stroke-width:1.5;stroke-miterlimit:10;}
+	.st23{fill:#FFFFFF;}
+	.st24{fill:none;stroke:#5C310E;stroke-width:0.25;stroke-linecap:round;stroke-miterlimit:10;}
+	.st25{fill:#F4A071;stroke:#5C310E;stroke-width:0.25;stroke-linecap:round;stroke-miterlimit:10;}
+	.st26{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st27{fill:none;stroke:#FFFFFF;stroke-width:0.75;stroke-miterlimit:10;}
+	.st28{fill:#35228E;stroke:#FFFFFF;stroke-width:0.75;stroke-miterlimit:10;}
+	.st29{fill:#F4602C;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
+</style>
+<switch>
+	<foreignObject width="1" height="1" requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/">
+	</foreignObject>
+	<g>
+					<path class="st1" d="m194.99 233.15h-128.91c-2.44 0-4.42-1.98-4.42-4.42v-188.37c0-1.73 1.4-3.13 3.13-3.13h130.2c1.72 0 3.13 1.4 3.13 3.13v189.65c0 1.73-1.4 3.14-3.13 3.14zm-129.94-192.53v188.1c0 0.57 0.46 1.03 1.03 1.03h128.65v-189.13h-129.68z"/>
+							<path class="st1" d="m172.9 124.42h-86.02c-0.94 0-1.69-0.76-1.69-1.69 0-0.94 0.76-1.69 1.69-1.69h86.02c0.94 0 1.69 0.76 1.69 1.69s-0.75 1.69-1.69 1.69z"/>
+							<path class="st1" d="m172.9 136.95h-86.02c-0.94 0-1.69-0.76-1.69-1.69 0-0.94 0.76-1.69 1.69-1.69h86.02c0.94 0 1.69 0.76 1.69 1.69 0 0.94-0.75 1.69-1.69 1.69z"/>
+							<path class="st1" d="m172.9 149.49h-86.02c-0.94 0-1.69-0.76-1.69-1.69s0.76-1.69 1.69-1.69h86.02c0.94 0 1.69 0.76 1.69 1.69s-0.75 1.69-1.69 1.69z"/>
+						<path class="st1" d="m162.12 89.53h-64.45c-0.94 0-1.69-0.76-1.69-1.69 0-0.94 0.76-1.69 1.69-1.69h64.45c0.94 0 1.69 0.76 1.69 1.69s-0.76 1.69-1.69 1.69z"/>
+					<path class="st1" d="m80.6 37.5v-13c0-0.74 0.6-1.34 1.34-1.34h130.39c0.74 0 1.34 0.6 1.34 1.34v186.64c0 0.74-0.6 1.34-1.34 1.34h-14.61c-0.74 0-1.34-0.6-1.34-1.34v-170.96c0-0.74-0.6-1.34-1.34-1.34h-113.11c-0.74 0-1.33-0.6-1.33-1.34z"/>
+						<path class="st2" d="m192.77 186.29c-0.1 0-0.2-0.02-0.31-0.02s-0.23 0.02-0.34 0.02c-1.86 12.39-12 22.27-25.06 24.68-0.74 0.14-1.35 0.66-1.51 1.39-0.75 3.26-1.16 6.71-1.16 10.29 0 20.09 12.57 36.38 28.07 36.38s28.07-16.29 28.07-36.38c0-3.58-0.41-7.02-1.16-10.28-0.17-0.73-0.78-1.26-1.51-1.39-13.07-2.41-23.24-12.3-25.09-24.69z"/>
+						<path class="st23" d="m192.46 260.31c-16.18 0-29.34-16.89-29.34-37.65 0-3.55 0.4-7.11 1.19-10.57 0.28-1.2 1.27-2.13 2.52-2.36 12.61-2.33 22.27-11.82 24.03-23.62l0.16-1.07 1.47-0.04 1.35 0.07 0.19 1.03c1.76 11.81 11.44 21.3 24.07 23.63 1.26 0.23 2.25 1.16 2.52 2.36 0.79 3.46 1.19 7.01 1.19 10.56-0.01 20.76-13.17 37.66-29.35 37.66zm-0.02-69.71c-3.33 10.92-12.97 19.37-25.15 21.62-0.26 0.05-0.46 0.22-0.51 0.43-0.74 3.27-1.13 6.64-1.13 10 0 19.36 12.02 35.11 26.8 35.11s26.8-15.75 26.8-35.11c0-3.36-0.38-6.73-1.13-10-0.05-0.21-0.24-0.38-0.5-0.43-12.19-2.24-21.85-10.69-25.18-21.62z"/>
+							<path class="st0" d="m183.26 233.4l8.58 8.51-8.58-8.51m0-0.58c-0.15 0-0.3 0.06-0.41 0.17-0.22 0.22-0.22 0.59 0 0.81l8.58 8.51c0.11 0.11 0.26 0.17 0.4 0.17 0.15 0 0.3-0.06 0.41-0.17 0.22-0.22 0.22-0.59 0-0.81l-8.58-8.51c-0.1-0.11-0.25-0.17-0.4-0.17z"/>
+							<path class="st23" d="m191.84 243.76c-0.49 0-0.95-0.19-1.3-0.53l-8.58-8.52c-0.72-0.71-0.72-1.88-0.01-2.61 0.7-0.7 1.92-0.7 2.61-0.01l8.58 8.52c0.35 0.35 0.54 0.81 0.54 1.31 0 0.49-0.19 0.96-0.54 1.31-0.35 0.33-0.81 0.53-1.3 0.53z"/>
+							<path class="st0" d="m200.35 220.36l-8.51 21.55 8.51-21.55m1.23-2.41c-0.26 0-0.51 0.15-0.61 0.39l-9.66 23.29c-0.13 0.32 0.03 0.68 0.37 0.8 0.08 0.03 0.16 0.04 0.24 0.04 0.26 0 0.51-0.15 0.61-0.39l9.66-23.29c0.13-0.32-0.03-0.68-0.37-0.8-0.08-0.02-0.16-0.04-0.24-0.04z"/>
+							<path class="st23" d="m191.92 243.76l-0.69-0.13c-0.48-0.18-0.88-0.56-1.08-1.02-0.2-0.47-0.21-0.99-0.01-1.46l9.66-23.29c0.3-0.72 1-1.18 1.78-1.18l0.69 0.12c0.48 0.18 0.88 0.56 1.08 1.02 0.2 0.47 0.21 0.99 0.01 1.46l-9.66 23.29c-0.3 0.73-1 1.19-1.78 1.19z"/>
+	</g>
+</switch>
+</svg>
